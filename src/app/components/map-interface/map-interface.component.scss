@@ -1,0 +1,45 @@
+#map {
+  height: 65vh;
+  width: 100%;
+  position: absolute;
+  margin-top: 3.5rem;
+  z-index: 1;
+}
+
+@media all and (max-width: 1200px) {
+  #map {
+    height: 67vh;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #map {
+    margin-top: 1.8rem;
+
+    height: 72vh;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #map {
+    margin-top: 2.5rem;
+
+    height: 60vh;
+  }
+}
+
+@media all and (max-width: 550px) {
+  #map {
+    margin-top: 4.5rem;
+
+    height: 80vh;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #map {
+    margin-top: 4.6rem;
+
+    height: 68vh;
+  }
+}
