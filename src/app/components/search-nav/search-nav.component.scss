@@ -42,6 +42,7 @@
 
   button {
     width: 5%;
+    min-width: 45px;
     height: 100%;
     background-color: hsl(0, 0%, 17%);
     color: white;
@@ -124,7 +125,7 @@
   }
 
   h6 {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
   h1 {
     font-size: 0.85rem;
@@ -152,7 +153,7 @@
   }
   .detail-view {
     flex-direction: column;
-    min-height: 220px;
+    min-height: 250px;
     max-width: fit-content;
     align-items: center;
 
@@ -168,17 +169,14 @@
     }
   }
 
-  h6 {
-    font-size: 0.4rem;
-  }
-  h1 {
-    font-size: 0.9rem;
-  }
-
   .detail-view {
     .details-view-sub {
+      h6 {
+        font-size: 0.6rem;
+      }
       h1 {
         margin-top: 0px;
+        font-size: 1rem;
       }
     }
   }
@@ -198,7 +196,11 @@
   }
 
   detail-view {
+    min-height: 200px;
     .details-view-sub {
+      h6 {
+        font-size: 0.5rem;
+      }
       h1 {
         margin-top: 0px;
       }
