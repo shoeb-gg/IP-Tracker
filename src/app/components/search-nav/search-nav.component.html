@@ -1,44 +1,40 @@
 <section>
-  <div class="bg-img">
-    <img src="../../../assets/pattern-bg.png" alt="" />
-  </div>
-  <div class="container">
-    <div class="dummy">eeff</div>
-    <div class="title">IP Address Tracker</div>
-
-    <div class="search-bar">
-      <input
-        type="text"
-        #ipInp
-        placeholder="Search for any IP address or domain"
-      />
-      <button (click)="getIpDetails(ipInp.value)">
-        <img src="../../../assets/icon-arrow.svg" alt="" />
-      </button>
+    <div class="bg-img">
+        <img src="../../../assets/pattern-bg.png" alt="" />
     </div>
+    <div class="container">
+        <div class="dummy">eeff</div>
+        <div class="title">IP Address Tracker</div>
 
-    <div class="detail">
-      <div class="detail-view">
-        <div class="details-view-sub">
-          <h6>IP ADDRESS</h6>
-          <h1>{{ ipAddress }}</h1>
+        <div class="search-bar">
+            <input (keyup.enter)="getIpDetails(ipInp.value)" type="text" #ipInp placeholder="Search for any IP address or domain" />
+            <button (click)="getIpDetails(ipInp.value)">
+                <img src="../../../assets/icon-arrow.svg" alt="" />
+            </button>
         </div>
 
-        <div class="details-view-sub border-con">
-          <h6>LOCATION</h6>
-          <h1>{{ location }}</h1>
-        </div>
+        <div class="detail">
+            <div class="detail-view">
+                <div class="details-view-sub">
+                    <h6>IP ADDRESS</h6>
+                    <h1>{{ ipAddress }}</h1>
+                </div>
 
-        <div class="details-view-sub border-con">
-          <h6>TIMEZONE</h6>
-          <h1>UTC {{ timezone }}</h1>
-        </div>
+                <div class="details-view-sub border-con">
+                    <h6>LOCATION</h6>
+                    <h1>{{ location }}</h1>
+                </div>
 
-        <div class="details-view-sub border-con">
-          <h6>ISP</h6>
-          <h1>{{ isp }}</h1>
+                <div class="details-view-sub border-con">
+                    <h6>TIMEZONE</h6>
+                    <h1>UTC {{ timezone }}</h1>
+                </div>
+
+                <div class="details-view-sub border-con">
+                    <h6>ISP</h6>
+                    <h1>{{ isp }}</h1>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
